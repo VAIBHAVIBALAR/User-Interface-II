@@ -13,6 +13,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+    border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -123,75 +124,36 @@ nav a:focus{
 .top-imgs{
     display: flex;
     justify-content:center;
+    flex-direction: row;
 }
-.topl{
+.img-and-title{
     display: flex;
-    justify-content:space-evenly;
-}
-.topr{
-    display: flex;
-    justify-content:space-evenly;
-}
-.topl, .topr, img{
-    width: 40%;
-}
-.title-top{
-    display: flex;
-    justify-content:center;
-}
-.title-topl{
-    display: flex;
-    justify-content:space-evenly;
-    width:60%;
-    padding-right: 0%;
-    margin-right:0%;
-    margin-left: 12%;
-}
+    align-items: center;
+    flex-direction: column;
 
-.title-topr{
-    display: flex;
-    justify-content:space-evenly;
-    width:60%;
-    padding-right: 1%;
-    margin-right:9%;
-    margin-left: 0%;
 }
-
+.img-and-title img{
+    width: 60%;
+    height: 25vh;
+    margin:2% 1%;
+}
 .bottom-imgs{
     display: flex;
-    justify-content: center;
-}
-.bottoml, .bottomr, img{
-    width: 40%;
-}
-.bottoml{
-    display: flex;
-    justify-content:space-evenly;
-}
-.bottomr{
-    display: flex;
-    justify-content:space-evenly;
-}
-.title-bottom{
-    display: flex;
     justify-content:center;
+    flex-direction: row;
+
 }
-.title-bottoml{
+.bottom-imgs img{
+    width: 60%;
+    height: 25vh;
+    margin:2% 1%;
+}
+.upper{
     display: flex;
-    justify-content:space-evenly;
-    width:60%;
-    padding-right: 0%;
-    margin-right:0%;
-    margin-left: 12%;
+    flex-direction: row;
 }
-.title-bottomr{
-    display: flex;
-    justify-content:space-evenly;
-    width:60%;
-    padding-right: 1%;
-    margin-right:9%;
-    margin-left: 0%;
-}
+
+
 
 
 footer{
@@ -251,8 +213,136 @@ footer a{
         align-items: center;
         margin: 1% 38%;
     }
-    .three{
-        order:0;
+    .top-imgs{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .bottom-imgs{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .img-and-title img{
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            height: 40vh;
+            margin:2% 1%;
+
+        
+    
+    }
+    .img-and-title{
+        display: flex;
+        justify-content: center;
+                
+    }
+    .title-top{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .upper{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+}
+@media(max-width: 500px){
+    header h1{
+        display: flex;
+        justify-content: center;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1%;
+    }
+    header nav a{
+        padding: 1% 2%;
+        margin: 0.1% 0;
+
+    }
+    .left img{
+        width:100%;
+        margin: 5%;
+        padding:4%;
+    }
+    .right{
+        margin-bottom: 10%;
+        margin-top: 0%;
+        padding-top: 0%;
+        margin-left: 10%;
+    }
+     .right h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        padding-bottom: 3%;
+    } 
+    .right button{
+        display: flex;
+        align-items: center;
+        margin: 1% 38%;
+    }
+    .top-imgs{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .bottom-imgs{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .img-and-title img{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 30%;
+            height: 10vh;
+            margin:2% 1%;
+    }
+    .img-and-title{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .title-top{
+        display:flex;
+        flex-direction: column;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+        padding: 4%;
+        background-color: teal;
+    }
+    footer h2{
+        margin-left: 2%;
+    }
+    footer button{
+        background-color:blueviolet;
+        color:white;
+    }
+    footer a{
+       color:white; 
     }
 
 }
