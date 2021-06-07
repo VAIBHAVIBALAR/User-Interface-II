@@ -13,7 +13,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -84,7 +83,7 @@ nav {
     margin-left: 6%;
 }
 nav a{
-    padding: 0.5% 1%;
+    padding: 1% 2%;
     margin:0;
     text-decoration: none;
     border: 1px solid black;
@@ -109,7 +108,7 @@ nav a:focus{
 }
 .right {
     font-size: 1em;
-    padding-top: 9%;
+    padding-top: 7%;
     margin-right: 8%;
 }
 .right button{
@@ -121,21 +120,77 @@ nav a:focus{
    text-decoration: none;
    color:white; 
 }
-.top{
+.top-imgs{
     display: flex;
-    justify-content: space-evenly;
-    margin: 2%;
+    justify-content:center;
 }
-.top img{
-    width: 20%;
-}
-.bottom{
+.topl{
     display: flex;
-    margin: 2%;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
-.bottom img{
-    width: 20%;
+.topr{
+    display: flex;
+    justify-content:space-evenly;
+}
+.topl, .topr, img{
+    width: 40%;
+}
+.title-top{
+    display: flex;
+    justify-content:center;
+}
+.title-topl{
+    display: flex;
+    justify-content:space-evenly;
+    width:60%;
+    padding-right: 0%;
+    margin-right:0%;
+    margin-left: 12%;
+}
+
+.title-topr{
+    display: flex;
+    justify-content:space-evenly;
+    width:60%;
+    padding-right: 1%;
+    margin-right:9%;
+    margin-left: 0%;
+}
+
+.bottom-imgs{
+    display: flex;
+    justify-content: center;
+}
+.bottoml, .bottomr, img{
+    width: 40%;
+}
+.bottoml{
+    display: flex;
+    justify-content:space-evenly;
+}
+.bottomr{
+    display: flex;
+    justify-content:space-evenly;
+}
+.title-bottom{
+    display: flex;
+    justify-content:center;
+}
+.title-bottoml{
+    display: flex;
+    justify-content:space-evenly;
+    width:60%;
+    padding-right: 0%;
+    margin-right:0%;
+    margin-left: 12%;
+}
+.title-bottomr{
+    display: flex;
+    justify-content:space-evenly;
+    width:60%;
+    padding-right: 1%;
+    margin-right:9%;
+    margin-left: 0%;
 }
 
 
@@ -155,5 +210,50 @@ footer button{
 }
 footer a{
    color:rgb(0, 0, 0); 
+}
+
+@media(max-width: 800px){
+    header h1{
+        display: flex;
+        justify-content: center;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1%;
+    }
+    header nav a{
+        padding: 1% 2%;
+        margin: 0.1% 0;
+
+    }
+    .left img{
+        width:100%;
+        margin: 5%;
+        padding:4%;
+    }
+    .right{
+        margin-bottom: 10%;
+        margin-top: 0%;
+        padding-top: 0%;
+        margin-left: 10%;
+    }
+     .right h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        padding-bottom: 3%;
+    } 
+    .right button{
+        display: flex;
+        align-items: center;
+        margin: 1% 38%;
+    }
+    .three{
+        order:0;
+    }
+
 }
 
